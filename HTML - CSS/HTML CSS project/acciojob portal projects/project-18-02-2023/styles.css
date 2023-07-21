@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    background-color: #111;
+    color:  #f0f0f0;
+}
+html{
+    font-size: 62.25%;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 2rem;
+    padding: 0.25rem;
+}
+.info{
+    padding: 0.35rem;
+}
+.nav{
+    padding: 2rem;
+    border: 0.1rem solid #414141;
+    border-radius: 0.5rem;
+}
+.img{
+    width: 8rem;
+    height: auto;
+    border-radius: 50%;
+}
+.profile-photo{
+    border: 0.1rem solid #414141;
+     border-radius: 0.5rem;
+}
+.profile{
+    border: 0.1rem solid #414141;
+     border-radius: 0.5rem;
+     
+}
+.contact-us{
+    border: 0.1rem solid #414141;
+     border-radius: 0.5rem;
+}
+.right{
+    border: 0.1rem solid #414141;
+     border-radius: 0.5rem;
+}
+
+.main{
+    display: flex;
+}
+
+.left{
+    flex-wrap: nowrap;
+    width: 25%;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+.right{
+    flex-wrap: nowrap;
+    width: 75%;
+    margin: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+.left-side{
+    margin: 0.25rem;
+    padding: 2rem;
+}
+.profile-photo{
+    text-align: center;
+}
+.lowercase{
+    text-transform: capitalize;
+    padding: 1rem 1rem 1rem 3rem;
+    border-radius: 1rem;
+}
+
+.container{
+    /* max-width: 1200px; */
+    width: 95%;
+    margin: auto;
+}
+
+
+/* ############## table ############## */
+
+table {
+    border: 1px solid #414141;
+    border-radius: 0.8rem;
+    width: 95%;
+    margin: 1rem auto;
+    text-align: center;
+    border-collapse:collapse;
+  }
+table thead tr{
+    border-bottom:1px solid #414141; 
+}
+
+thead{
+    padding: 1rem;
+}
+
+th, td{
+    padding: 0.8rem;
+    border-right: 1px solid #414141;
+}
+
+.no-bullet{
+    list-style: none;
+}
+.svg{
+    width: 3rem;
+    height: 3rem;
+}
+table th, table td{
+    color: #656262;
+}
+
+.center{
+    display: flex;
+    padding-top: 1rem  ;
+    align-content: center;
+}
+.center a{
+    text-decoration: none;
+    padding:1rem 0 0 1.5rem;
+}
+.abc{
+    margin-top: 2rem;
+}
+
+@media (max-width: 640px){
+    .main{
+        flex-wrap: wrap;
+    }
+    .left{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+    .right{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0.5rem;
+        margin: 0.5rem 0 0.5rem 0.5rem;
+    }
+}

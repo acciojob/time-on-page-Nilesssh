@@ -1,0 +1,44 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: none;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    height:97vh;
+    background-color: #B1D9DB;
+}
+
+.abs{
+    position: absolute;
+    
+    height: 100%;
+}
+
+.leftpart{
+    width: 25%;
+    background-color: #B1D9DB;
+    
+}
+.sign-up-page{
+    width: 75%;
+    left: 25%;
+    border-radius: 1rem 0 0 1rem;
+     background-color: rgb(255, 255, 255);
+}
+.leftpart span{
+    font-size: 120%;
+    position: absolute;
+    color: white;
+    left:15%;
+    top: 15%;
+}
+.leftpart img{
+    position: absolute;
+    rotate: -7.5deg;
+    width: 100%;
+    left: 30%;
+    bottom: 5%;
+    z-index: 20;
+}

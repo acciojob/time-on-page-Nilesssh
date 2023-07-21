@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="main-container">
+        <div class="calculator">
+            <div class=" resultarea">
+                <p id="string">0</p>
+                <p id="ans">0</p>
+            </div>
+            <div class="row row1">
+                <button onclick="calc('1')"  class="number btn1">1</button>
+                <button onclick="calc('2')"  class="number btn2">2</button>
+                <button onclick="calc('3')"  class="number btn3">3</button>
+                <button onclick="calc('*')" class="number sym btn*">*</button>
+            </div>
+            <div class="row row2">
+                <button onclick="calc('4')"  class="number btn4">4</button>
+                <button onclick="calc('5')"  class="number btn5">5</button>
+                <button onclick="calc('6')"  class="number btn6">6</button>
+                <button onclick="calc('/')"  class="number sym btn/">/</button>
+            </div>
+            <div class="row row3">
+                <button onclick="calc('7')" class="number btn7">7</button>
+                <button onclick="calc('8')" class="number btn8">8</button>
+                <button onclick="calc('9')" class="number btn9">9</button>
+                <button onclick="calc('+')" class="number sym btn-plus">+</button>    
+            </div>
+            <div class="row row4">
+                <button onclick="calc('.')" class="number sym btn-dot">.</button>
+                <button onclick="calc('0')" class="number btn0">0</button>    
+                <button onclick="calc('-')" class="number sym btn-">-</button>   
+                <button onclick="hope('0')" class="number btn-equal">Clear</button>   
+            </div>
+            
+            
+        </div>
+    </section>
+    <script src="./calculator.js"></script>
+    
+</body>
+</html>

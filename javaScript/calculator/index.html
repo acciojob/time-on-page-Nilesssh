@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Increment Decrement Game</title>
+  <template id="Nice-to-meet">
+      <style>
+        
+      </style>
+  </template>
+  <style>
+    .player {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .player h2 {
+      margin-right: 10px;
+    }
+
+    .player button {
+      margin-right: 5px;
+    }
+
+    .player p {
+      font-weight: bold;
+    }
+
+    #winner {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Increment Decrement Game</h1>
+
+  <div class="player">
+    <h2>Player A</h2>
+    <button onclick="increment('A')">+</button>
+    <button onclick="decrement('A')">-</button>
+    <p>Counter A: <span id="counterA">0</span></p>
+  </div>
+
+  <div class="player">
+    <h2>Player B</h2>
+    <button onclick="increment('B')">+</button>
+    <button onclick="decrement('B')">-</button>
+    <p>Counter B: <span id="counterB">0</span></p>
+  </div>
+
+  <div id="winner"></div>
+
+  <script>
+    let counterA = 0;
+    let counterB = 0;
+
+    const updateCounters = () => {
+      document.getElementById('counterA').textContent = counterA;
+      document.getElementById('counterB').textContent = counterB;
+    };
+
+    const checkWinner = () => {
+      if (counterA >= 10) {
+        document.getElementById('winner').textContent = 'Player A wins!';
+        disableButtons();
+      } else if (counterB >= 10) {
+        document.getElementById('winner').textContent = 'Player B wins!';
+        disableButtons();
+      }
+    };
+
+    const disableButtons = () => {
+      document.getElementById('btnIncrementA').disabled = true;
+      document.getElementById('btnDecrementA').disabled = true;
+      document.getElementById('btnIncrementB').disabled = true;
+      document.getElementById('btnDecrementB').disabled = true;
+    };
+
+    const increment = (player) => {
+      if (player === 'A') {
+        counterA++;
+      } else if (player === 'B') {
+        counterB++;
+      }
+
+      updateCounters();
+      checkWinner();
+    };
+
+    const decrement = (player) => {
+      if (player === 'A') {
+        counterA--;
+      } else if (player === 'B') {
+        counterB--;
+      }
+
+      updateCounters();
+      checkWinner();
+    };
+  </script>
+</body>
+</html>

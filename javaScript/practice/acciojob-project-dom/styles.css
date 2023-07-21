@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: none;
+    background-color: #fff;
+}
+
+body{
+    margin: 50px;
+}
+
+.heading{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: medium;
+    color: #fff;
+}
+
+select{
+    margin-bottom: 50px;
+}
+option{
+    color: #fff;
+}
+form input{
+    background-color: white;
+    color: black;
+
+}
+form label{
+    color: white;
+}
+.addbtn{
+    margin-top: 30px;
+}
+
+.col1{
+    padding-left: 60px;
+}

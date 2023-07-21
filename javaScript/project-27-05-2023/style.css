@@ -1,0 +1,123 @@
+/* Remove the existing border styles for table, tr, td */
+table,
+tr,
+td {
+  border: none;
+}
+
+/* Set the body styles */
+body {
+  position: relative;
+  background-color: #1A1A1C;
+}
+
+/* Set the search container styles */
+.search_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  height: 40px;
+  padding: 10px;
+}
+
+#search {
+  width: 605px;
+}
+
+.inputs {
+  background-color: #1A1A1C;
+  border: none;
+  color: white;
+  outline: none;
+  border: 1.5px solid #8E8E8E;
+  border-radius: 1.2px;
+}
+
+/* Set the main container styles */
+.main-container {
+  width: 900px;
+  margin: 135px auto 0 auto;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.9; /* Firefox */
+}
+
+/* Set the table container styles */
+#table-container {
+  margin-top: 20px;
+}
+
+/* Set the table styles */
+table {
+  border-collapse: collapse;
+  font-size: 35x;
+  min-width: 100%;
+  /* These are just initial values which are overridden using JavaScript when a column is resized */
+  grid-template-columns: minmax(200px, 1fr) minmax(100px, 0.5fr) minmax(100px, 1fr) minmax(100px, 1.2fr) minmax(100px, 0.3fr) minmax(100px, 1.5fr);
+}
+
+/* Set the border-bottom style for tr in thead */
+
+
+/* Set the border-bottom style for tr in tbody */
+tbody tr {
+  border-bottom: 1.5px solid #5a5a5a;
+}
+
+/* Set the styles for td */
+td {
+    position: relative;
+  padding: 12px 20px 12px 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #1A1A1C;
+  border: none;
+  color: white;
+  outline: none;
+  border-radius: 0px;
+}
+
+/* Set the style for the last th */
+th:last-child {
+  border: 0;
+}
+
+.rtl {
+  text-align: right;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+td:first-child{
+    padding:  12px 20px 12px 0px;
+}
+td:last-child{
+    padding:  12px 0px 12px 20px;
+}
+
+.percentage-1{
+    color: green;
+}
+.percentage-2{
+    color: red;
+}
+
+.aligned{
+    display: flex;
+}
+
+img{
+    justify-content: center;
+}
+
+.namealign{
+    padding-top: 6px;
+}

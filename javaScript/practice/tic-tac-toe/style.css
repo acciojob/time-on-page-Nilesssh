@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 660px;
+
+}
+.container{
+    width: 600px;
+    height: 600px;
+    border: 8px solid white;
+}
+
+.row{
+    display: flex;
+}
+
+.boxes{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}

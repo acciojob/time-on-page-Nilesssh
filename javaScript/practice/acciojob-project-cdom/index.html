@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contest-2</title>
+</head>
+<body>
+    <section class="section-1 container ">
+        <h3>Filter ui cards via there profession.</h3>
+        <div class="select">
+            <select name="" id="select">
+                <option value="" class="selected" disabled selected>profession</option>
+                <option value="developer" class="option-1">Developer</option>
+                <option value="admin" class="option-2">Admin</option>
+            </select>
+        </div>
+        <div class="profession" id="professionnn">
+            
+        </div>
+        <button class="btn" onclick="filtered()">Filter</button>
+    </section>
+    <section class="section-2 container">
+        <h3>Add a new user</h3>
+        
+        <form action="#">
+            <div class="div-form">
+                <div class="div-name form-div">
+                    <label for="name">Enter Name : </label> <br>
+                    <input type="text" name="" id="name" required>
+                </div>
+                <div class="div-profession form-div">
+                    <label for="profession">Enter Profession</label> <br>
+                    <input type="text" name="" id="profession" required>
+                </div>
+                <div class="div-age form-div">
+                    <label for="age">Enter Age</label> <br>
+                    <input type="age" name="" id="age" required>
+                </div>
+            </div>
+                <input type="submit" onclick="addData()" class="btn">
+            </form>
+        
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

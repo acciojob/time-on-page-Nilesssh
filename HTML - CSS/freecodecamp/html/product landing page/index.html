@@ -1,0 +1,280 @@
+<!-- User Stories:
+
+Your product landing page should have a header element with a corresponding id="header"
+You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)
+Within the #header element, you can see a nav element with a corresponding id="nav-bar"
+You can see at least three clickable elements inside the nav element, each with the class nav-link
+When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+You can watch an embedded product video with id="video"
+Your landing page has a form element with a corresponding id="form"
+Within the form, there is an input field with id="email" where you can enter an email address
+The #email input field should have placeholder text to let users know what the field is for
+The #email input field uses HTML5 validation to confirm that the entered text is an email address
+Within the form, there is a submit input with a corresponding id="submit"
+When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
+The navbar should always be at the top of the viewport
+Your product landing page should have at least one media query
+Your product landing page should utilize CSS flexbox at least once
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
+
+You should have a header element with an id of header.
+Waiting:You should have an img element with an id of header-img.
+Waiting:Your #header-img should be a descendant of the #header.
+Waiting:Your #header-img should have a src attribute.
+Waiting:Your #header-img’s src value should be a valid URL (starts with http).
+Waiting:You should have a nav element with an id of nav-bar.
+Waiting:Your #nav-bar should be a descendant of the #header.
+Waiting:You should have at least 3 .nav-link elements within the #nav-bar.
+Waiting:Each .nav-link element should have an href attribute.
+Waiting:Each .nav-link element should link to a corresponding element on the landing page (has an href with a value of another element's id. e.g. #footer).
+Waiting:You should have a video or iframe element with an id of video.
+Waiting:Your #video should have a src attribute.
+Waiting:You should have a form element with an id of form.
+Waiting:You should have an input element with an id of email.
+Waiting:Your #email should be a descendant of the #form.
+Waiting:Your #email should have the placeholder attribute with placeholder text.
+Waiting:Your #email should use HTML5 validation by setting its type to email.
+Waiting:You should have an input element with an id of submit.
+Waiting:Your #submit should be a descendant of the #form.
+Waiting:Your #submit should have a type of submit.
+Waiting:Your #form should have an action attribute of https://www.freecodecamp.com/email-submit.
+Waiting:Your #email should have a name attribute of email.
+Waiting:Your #nav-bar should always be at the top of the viewport.
+Waiting:Your Product Landing Page should use at least one media query.
+Waiting:Your Product Landing Page should use CSS Flexbox at least once. -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div id="header-img" class="nav-bar-logo"><img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Logo"></div>
+            <div id="nav-bar-content">
+                <ul>
+                    <li class="nav-link"><a href="#features" id="features">Features</a></li>
+                    <li class="nav-link"><a href="#how_it_works" id="how_it_works">How It Works</a></li>
+                    <li class="nav-link"><a href="#pricing" id="pricing">Pricing</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="upper">
+            <div class="upper-content">
+                Handcrafted, home-made masterpieces
+            </div>
+            <div class="upper-content">
+                <form action="https://www.freecodecamp.com/email-submit">
+                    <div class="up-co"><input id="email" type="text" placeholder="Enter your email address" required name="email"></div>
+                    <div class="up-co"><a href="https://www.freecodecamp.com/email-submit" class="btn" type="submit" id="submit">GET STARTED</a></div>
+                </form>
+            </div>
+        </div>
+        <section class="section1" id="features">
+            <div class="middle-content">
+                <div class="mi-co-co"><i class="fa fa-3x fa-fire"></i></div>
+                <div class="mi-co-co"></div>
+            </div>
+            <div class="middle-content">
+                <div class="mi-co-co"><i class="fa fa-3x fa-truck"></i></div>
+                <div class="mi-co-co"></div>
+            </div>
+            <div class="middle-content">
+                <div class="mi-co-co"><i class="fa fa-3x fa-battery-full" aria-hidden="true"></i></div>
+                <div class="mi-co-co"></div>
+            </div>
+        </section>
+        <section class="section2"  id="how-it-works">
+            <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+          </section>
+        <section class="section3" id="pricing">
+                <div class="product" id="tenor">
+                  <div class="level">Tenor Trombone</div>
+                  <h2>$600</h2>
+                  <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                  </ol>
+                  <button class="btn">Select</button>
+                </div>
+                <div class="product" id="bass">
+                  <div class="level">Bass Trombone</div>
+                  <h2>$900</h2>
+                  <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                  </ol>
+                  <button class="btn">Select</button>
+                </div>
+                <div class="product" id="valve">
+                  <div class="level">Valve Trombone</div>
+                  <h2>$1200</h2>
+                  <ol>
+                    <li>Plays similar to a Trumpet</li>
+                    <li>Great for Jazz Bands</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                  </ol>
+                  <button class="btn">Select</button>
+                </div>
+        </section>
+    </main>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="original trombones logo"
+          />
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container"></div>
+
+      <section id="hero">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Get Started" class="btn" />
+        </form>
+      </section>
+
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Premium Materials</h2>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>Fast Shipping</h2>
+              <p>
+                We make sure you recieve your trombone as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Quality Assurance</h2>
+              <p>
+                For every purchase you make, we will ensure there are no damages
+                or faults and we will check and test the pitch of your
+                instrument.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works">
+          <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section id="pricing">
+          <div class="product" id="tenor">
+            <div class="level">Tenor Trombone</div>
+            <h2>$600</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">Bass Trombone</div>
+            <h2>$900</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="valve">
+            <div class="level">Valve Trombone</div>
+            <h2>$1200</h2>
+            <ol>
+              <li>Plays similar to a Trumpet</li>
+              <li>Great for Jazz Bands</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2016, Original Trombones</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

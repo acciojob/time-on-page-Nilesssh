@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .keys {
+    display: flex;
+  }
+  
+  .key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .key:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .key:active {
+    background-color: #c1c1c1;
+  }
+  

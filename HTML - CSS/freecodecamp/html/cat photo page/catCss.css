@@ -1,0 +1,32 @@
+h1 {
+    font-family: 'Yeon Sung', cursive;;
+    font-weight: 700;
+    color: rgb(203, 100, 100);
+    text-align: center;
+  
+  }
+  
+  header{
+    text-align: center;
+    width: 60%;
+    margin: auto auto;
+  }
+  
+  div {
+    width: 60%;
+    margin: auto auto;
+    padding: 10px;
+    background-color: #A8A4CE;
+  }
+  
+  body {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSZ3w5qOhYTzFWGwtpKUMqAeHW4uGKcWFDA&usqp=CAU) no-repeat center /cover;
+   
+  }
+  
+  #name , #email , #number {
+    width: 100%;
+  }
+  #indoor-outdoor{
+    font-size: xx-large;
+  }

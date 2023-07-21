@@ -1,0 +1,29 @@
+h1 {
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
+  
+  }
+  
+  header{
+    text-align: center;
+    width: 60%;
+    margin: auto auto;
+  }
+  
+  div {
+    width: 60%;
+    margin: auto auto;
+    padding: 10px;
+    background-color: #A8A4CE;
+  }
+  
+  body {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSZ3w5qOhYTzFWGwtpKUMqAeHW4uGKcWFDA&usqp=CAU) no-repeat center /cover;
+   
+  }
+  
+  #name , #email , #number {
+    width: 100%;
+  }
+

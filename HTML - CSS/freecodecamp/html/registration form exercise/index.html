@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">MakingExamsEasy Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form" action="hi.ho.cos">
+      <fieldset>
+        <label id="name-label">Name <input id="name" for="name-label" placeholder="Enter your name" required ></label>
+        <label id="email-label">Email <input for="email-label" id="email" placeholder="Enter your email address" type="email" required ></label>
+        <label id="number-label">Age (optional) <input for="number-label" id="number" type="number" placeholder="Enter your age" required  min="10" max="99"></label>
+        <label id="role">Which option best describes your current role? <select for="role" id="dropdown">
+          <option value="role">select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="say">Prefer not to say</option>
+          <option value="other">Other</option>
+          </select></label>
+          
+      </fieldset>
+      <fieldset>
+
+        <p>Would you recommend MakingExamsEasy to a friend?</p>
+        <input value="definitely" type="radio" name="recommend" checked>Definitely</input>
+        <input value="maybe" type="radio" name="recommend">Maybe</input>
+        <input value="not-sure" type="radio" name="recommend">Not sure</input>
+       
+        <label>What is your favorite feature of MakingExamsEasy?
+        <select id="dropdown">
+          <option  value="option">Select an option</option>
+          <option name="challenges" value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="source">Open Source</option>
+        </select>
+        </label>
+      </fieldset>
+      <fieldset>
+  
+        <p>What would you like to see improved? (Check all that apply) </p>
+          <input name="front"  value="front" type="checkbox">Front-end Projects</input><br>
+          <input name="back"  value="back" type="checkbox">Back-end Projects</input><br>
+          <input name="data"  value="visualization" type="checkbox">Data Visualization</input><br>
+          <input name=""  value="challenges" type="checkbox">Challenges</input><br>
+          <input name=""  value="source" type="checkbox">Open Source Community</input><br>
+          <input name=""  value="gitter" type="checkbox">Gitter help rooms</input><br>
+          <input name=""  value="videos" type="checkbox">Videos</input><br>
+          <input name=""  value="city" type="checkbox">City Meetups</input><br>
+          <input name=""  value="wiki" type="checkbox">Wiki</input><br>
+          <input name=""  value="forum" type="checkbox">Forum</input><br>
+          <input name=""  value="additional" type="checkbox">Additional Courses</input><br>
+      </fieldset>
+      <fieldset>
+          <label>Any comments or suggestions?</label>
+          <textarea placeholder="Enter your comments here..." ></textarea>
+          <input type="submit" id="submit" ></submit>
+      </fieldset>
+    </form>
+  </body>

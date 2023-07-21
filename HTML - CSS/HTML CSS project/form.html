@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+   <h1>Forms Demo</h1>
+    <form action="/all">
+        <label for="username">Enter a Username</label>
+        <input type="text" name="username" id="username" placeholder="Username" required><br><br>
+        <label for="color">Enter a Color</label>
+        <input type="color" id="color" name="color" value="#FF0000"><br><br>
+
+        <label for="">Enter a Number<input type="number" placeholder="Number" name="number" min="1" max="2000"  required></label>
+        <br>
+        
+        <p>
+            <h3>Chose the Size of Your Site</h3>
+              <select name="size of site" id=""  required>
+                <option value="">--Please Chose an Option--</option>
+                <option value="under8mb">Under 8 mb</option>
+                <option value="under45mb" >Under 45 mb</option>
+                <option value="under124mb">Under 124 mb</option>
+                <option value="above124mb">More than 124 mb</option>
+            </select>
+        </p>
+        <p>
+            <label for="engg"><input type="radio" name="engineering" id="engg">Engineering</label> <br><br>
+            <label for="medical"><input type="radio" name="medical" id="medical" >Medical</label><br><br>
+            <label for="mbs"><input type="radio" name="mba" id="mba" >MBA</label><br><br>
+            
+
+        </p>
+        <p>
+            <label for="range">Please select the range for fee of college</label>
+            <input type="range" name="range" id="range" minlength="0" maxlength="100" step="10" list="tick">
+            <datalist id="tick">
+                <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+        </datalist>
+        </p>
+        <p>
+            <h3>Review</h3>
+            <textarea cols="70" rows="7" name-="review" placeholder="Any special Requests?" minlength="20"> 
+                
+            </textarea>
+        </p>
+        <input type="submit">
+
+    </form>
+</body>
+</html>
+
